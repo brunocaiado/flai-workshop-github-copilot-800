@@ -1,0 +1,308 @@
+/* Global Styles - Batman Theme */
+.App {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(10, 10, 10, 0.85), rgba(26, 26, 46, 0.85)),
+    url('https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=1920&q=80') center/cover fixed;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.App::before {
+  content: '🦇';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40rem;
+  opacity: 0.03;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Navbar Customization - Gotham Style */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0,0,0,.5);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%) !important;
+  border-bottom: 3px solid #ffd700;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffd700 !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.nav-link {
+  color: #e0e0e0 !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Container Styling - Dark Knight */
+.container {
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  position: relative;
+  z-index: 1;
+}
+
+/* Page Headers - Bat Signal Glow */
+.page-header {
+  color: #ffd700;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #ffd700;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+}
+
+/* Table Enhancements - Batcave Tech */
+.table-responsive {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,.5);
+  border: 1px solid #ffd700;
+}
+
+.table {
+  color: #000;
+  background-color: #f5f5f5;
+  margin-bottom: 0;
+}
+
+.table thead {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  border-bottom: 3px solid #ffd700;
+}
+
+.table thead th {
+  color: #ffd700 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  border: none;
+  padding: 1rem 0.75rem;
+}
+
+.table tbody td {
+  background-color: #ffffff;
+  color: #000;
+  border-color: #dee2e6;
+  padding: 0.75rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) td {
+  background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover td {
+  background-color: #fff9e6;
+  transition: all 0.2s ease;
+}
+
+/* Card Enhancements - Wayne Tech */
+.card {
+  background: #ffffff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  color: #000;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+  border-color: #ffd700;
+}
+
+.card-title {
+  color: #000;
+  font-weight: bold;
+}
+
+.card-body {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.card-text {
+  color: #495057;
+}
+
+/* Badge Styling - Batman Colors */
+.badge {
+  padding: 0.5em 0.75em;
+  font-weight: 600;
+}
+
+.badge.bg-primary {
+  background-color: #ffd700 !important;
+  color: #000 !important;
+  border: 1px solid #d4af37;
+}
+
+.badge.bg-success {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+
+.badge.bg-info {
+  background-color: #17a2b8 !important;
+  color: #fff !important;
+}
+
+.badge.bg-warning {
+  background-color: #ffc107 !important;
+  color: #000 !important;
+  border: 1px solid #d39e00;
+}
+
+.badge.bg-secondary {
+  background-color: #6c757d !important;
+  color: #fff !important;
+}
+
+/* Alert Enhancements */
+.alert {
+  border-radius: 8px;
+  border: 2px solid;
+  box-shadow: 0 2px 4px rgba(0,0,0,.3);
+  font-weight: 500;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  border-color: #17a2b8;
+  color: #0c5460;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border-color: #ffc107;
+  color: #856404;
+}
+
+/* Home Page Jumbotron - Gotham Nights */
+.jumbotron {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #0a0a0a 100%);
+  color: #ffd700;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.7);
+  border: 2px solid #ffd700;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.jumbotron hr {
+  border-color: #ffd700 !important;
+  opacity: 0.5;
+}
+
+.jumbotron p {
+  color: #e0e0e0;
+  text-shadow: none;
+}
+
+/* Rank Badges - Batman Style */
+.rank-badge {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.rank-1 {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+.rank-2 {
+  background: linear-gradient(135deg, #C0C0C0 0%, #808080 100%);
+}
+
+.rank-3 {
+  background: linear-gradient(135deg, #CD7F32 0%, #8B4513 100%);
+}
+
+.rank-other {
+  background: linear-gradient(135deg, #333 0%, #1a1a1a 100%);
+  color: #ffd700;
+}
+
+/* Difficulty Badges - Gotham Danger Levels */
+.difficulty-easy {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+
+.difficulty-medium {
+  background-color: #ffc107 !important;
+  color: #000 !important;
+}
+
+.difficulty-hard {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+/* Loading and Error States */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .page-header {
+    font-size: 1.75rem;
+  }
+}
+
+
+/* Loading and Error States */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .page-header {
+    font-size: 1.75rem;
+  }
+}
